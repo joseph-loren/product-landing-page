@@ -1,1 +1,99 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 
+body {
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+	background: #eee url(http://www.ozratekstil.com/files/images/candy-turkish-beach-towel-denizli.jpg) no-repeat center top;
+	background-size: cover;
+}
+
+@media only screen and (max-width: 640px) {
+	body {
+			background: #eee url("http://www.perpetuallychic.com/wp-content/uploads/2014/01/turkish-towels-2.jpg") no-repeat center top;
+			width: 100%;
+	}
+}
+
+#header {
+	position: fixed;
+	display: flex;
+	max-width: 100%;
+	margin: 10px;
+	border: 3px solid #957525;
+	justify-content: center;
+}
+
+#header-img {
+	height: 100px;
+	width: auto;
+	padding: 5px;
+}
+
+#nav-bar {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+.navLink {
+	font: bold 1.5em/2.5em "courier new", serif;
+	padding: 20px;
+}
+
+a:link {
+	color: black;
+}
+
+a:visited {
+	color: orange;
+}
+
+a:hover {
+	color: red;
+}
+
+a:active {
+	color: pink;
+}
+
+#video {
+	display: inline-block;
+	justify-content: center;
+	max-width: 100%;
+	height: auto;
+	padding: 10px;
+	margin: 250px auto 0 auto;
+	border: 3px solid #957525;
+}
+
+#adCopy {
+	font: bold 2em/2em "courier new", serif;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.info {
+	padding: 25px;
+}
+
+#form {
+	margin: 1em auto 1em auto;
+	padding: 10px;
+}
+
+#merch {
+	font: bold 2em/2em "courier new", serif;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.item {
+	padding: 25px;
+}
