@@ -12,20 +12,15 @@ body {
 	background-size: cover;
 }
 
-@media only screen and (max-width: 640px) {
-	body {
-			background: #eee url("http://www.perpetuallychic.com/wp-content/uploads/2014/01/turkish-towels-2.jpg") no-repeat center top;
-			width: 100%;
-	}
-}
-
 #header {
 	position: fixed;
 	display: flex;
 	max-width: 100%;
+	min-width: 96%;
 	margin: 10px;
 	border: 3px solid #957525;
 	justify-content: center;
+	
 }
 
 #header-img {
@@ -96,4 +91,27 @@ a:active {
 
 .item {
 	padding: 25px;
+}
+
+@media only screen and (max-width: 640px) {
+	body {
+			background: #eee url("http://www.perpetuallychic.com/wp-content/uploads/2014/01/turkish-towels-2.jpg") no-repeat center top;
+			width: 100%;
+	}
+	
+	#nav-bar {
+    float: none;
+    display: flex;
+		flex-direction: column;
+    text-align: right;
+	}
+	
+	#header-img {
+		height: 150px;
+		float: left;
+	}
+	
+	#video {
+		margin: 330px auto 0 auto;
+	}
 }
